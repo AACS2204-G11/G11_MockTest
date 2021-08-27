@@ -2,9 +2,11 @@ public class Member {
     private String memberId;
     private String name;
     private int membershipDuration;
+    /**noOfMembers should declared as static */
     private int noOfMembers;
 
     public Member() {
+        /**need to increment the noOfMember variable */
     }
 
     public Member(String memberId, String name, int membershipDuration, int noOfMembers) {
@@ -12,7 +14,9 @@ public class Member {
         this.name = name;
         this.membershipDuration = membershipDuration;
         this.noOfMembers = noOfMembers;
-
+/**
+   use Member.numOfMembers for better visibility. you got the noOfMembers input arg but you don't use it?
+    */
         this.noOfMembers++;
     }
 
@@ -39,11 +43,15 @@ public class Member {
     public void setMembershipDuration(int membershipDuration) {
         this.membershipDuration = membershipDuration;
     }
-
+/**
+   static variable should access by static method
+    */
     public int getNoOfMembers() {
         return noOfMembers;
     }
-
+/**
+   static variable should access by static method
+    */
     public void setNoOfMembers(int noOfMembers) {
         this.noOfMembers = noOfMembers;
     }
@@ -75,7 +83,7 @@ public class Member {
                             "No of members =" + m1.getNoOfMembers());
 
         Member m2 = new Member("A2", "SY", 2, 7);
-
+/**What you want to print leh */
         System.out.println();
     }
 }

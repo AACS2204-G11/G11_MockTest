@@ -1,10 +1,18 @@
 class Member {
+    /**
+   noOfMember should be static
+    */
     private String memberID,name; private int membershipDuration,noOfMembers;
-
+/**
+   Where is your no args constructor
+    */
     Member(String memberID,String name,int membershipDuration){
         this.memberID=memberID;
         this.name=name;
         this.membershipDuration=membershipDuration;
+        /**
+   Since static use Member.noOfMembers better
+    */
         this.noOfMembers++;
     }
     public String getid() {
@@ -31,6 +39,9 @@ class Member {
         return noOfMembers;
     }
 
+    /**
+   static variable should access by static method
+    */
     public void setnumofmem(int noOfMembers) {
         this.noOfMembers = noOfMembers;
     }
@@ -50,6 +61,9 @@ class Member {
         double calculateMeberfees =  Duration * 100;
     }
     public static void main(String[] args) {
+        /**
+   Need to declare two members
+    */
         Member member = new Member("20WDM04238","CHANKARHOU",1);
         System.out.println(member);
     }

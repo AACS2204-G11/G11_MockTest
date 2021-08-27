@@ -5,6 +5,9 @@ public class Member {
     private static int noOfMembers = 0;
 
     public Member() {
+        /**
+   use Member.numOfMembers for better visibility
+    */
         this.noOfMembers++;
     }
 
@@ -12,7 +15,9 @@ public class Member {
         this.memberId = memberId;
         this.name = name;
         this.membershipDuration = membershipDuration;
-
+/**
+   use Member.numOfMembers for better visibility
+    */
         this.noOfMembers++;
     }
 
@@ -39,11 +44,15 @@ public class Member {
     public void setMembershipDuration(int membershipDuration) {
         this.membershipDuration = membershipDuration;
     }
-
+/**
+   static variable should access by static method
+    */
     public int getNoOfMembers() {
         return noOfMembers;
     }
-
+/**
+   static variable should access by static method
+    */
     public void setNoOfMembers(int noOfMembers) {
         this.noOfMembers = noOfMembers;
     }
@@ -63,6 +72,7 @@ public class Member {
     }
 
     public static void main(String[] args) {
+        /**One of them need to use constructor */
         Member m1 = new Member();
         m1.setMemberId("3423M2M3");
         m1.setName("Ali");

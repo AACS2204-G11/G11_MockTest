@@ -4,11 +4,20 @@ public class Member {
     private static int membershipDuration = 0;
     private String memberId;
     private String name;
+    /**
+   This variable should be static variable
+    */
     private int noOfMembers;
 
+    /**
+   Where is your no args constructor
+    */
     public Member(String memberId, String name, int noOfMembers) {
         this.memberId = memberId;
         this.name = name;
+        /**
+   I think you terbalik already. read the UML class diagram properly. Careless mistake
+    */
         this.noOfMembers = noOfMembers;
         membershipDuration =+1;
     }
@@ -59,6 +68,9 @@ public class Member {
     }
 
     public static void main(String[] args) {
+        /**
+   Where is your second member?
+    */
         Member m = new Member("M001" , "ChooZeXuan", 5);
         m.setMembershipDuration(5);
         System.out.println(Member.calculateInterest());

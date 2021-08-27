@@ -1,5 +1,10 @@
 package member;
-
+/*
+**WHATSAPP ME
+**
+**
+**
+*/
 class member{
     private String memberID;
     private String name;
@@ -34,6 +39,7 @@ class member{
 public class member{
 
     public static void main(String[] args) {
+        /**Need to declare two variable */
         member m = new member("B111","WANG JUN JIE");
         System.out.println(m.toString());
 

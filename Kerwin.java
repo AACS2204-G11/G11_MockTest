@@ -4,11 +4,15 @@ public class Member {
     private int membershipDuration;
     private static int noOfMembers;
 
+    /**
+   Where is your no args constructor
+    */
+
     public Member(String memberId, String name, int membershipDuration) {
         this.memberId = memberId;
         this.name = name;
         this.membershipDuration = membershipDuration;
-	this.noOfMembers++;
+	    this.noOfMembers++;
     }
 
     public String getMemberId() {
@@ -34,11 +38,15 @@ public class Member {
     public void setMembershipDuration(int membershipDuration) {
         this.membershipDuration = membershipDuration;
     }
-
+/**
+   static variable should access by static method
+    */
     public int getNoOfMembers() {
         return noOfMembers;
     }
-
+/**
+   static variable should access by static method
+    */
     public void setNoOfMembers(int noOfMembers) {
         this.noOfMembers = noOfMembers;
     }
@@ -59,11 +67,14 @@ public class Member {
 
     public class Main {   
  	public static void main(String[] args) {
+         /**
+   Next time use different variable naming 
+    */
        	Member m1 = new Member("20WDM0659", "KerwinSoo", 1);
-	System.out.println(m1);
+	    System.out.println(m1);
 
-	Member m1 = new Member("20WDM04121", "Bob", 1);
-	System.out.println(m1);
+	    Member m1 = new Member("20WDM04121", "Bob", 1);
+	    System.out.println(m1);
 
     }
 }

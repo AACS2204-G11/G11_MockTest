@@ -5,7 +5,9 @@ public class Member {
     private String name;
     private int membersduration;
     private static int numOfMembers=0;
-
+/**
+   use Member.numOfMembers for better visibility
+    */
     public Member() {
         this.numOfMembers++;
     }
@@ -15,6 +17,9 @@ public class Member {
         this.name = name;
         this.membershipDuration = membersduration;
         this.noOfMembers = noOfMembers;
+        /**
+   use Member.numOfMembers for better visibility
+    */
         this.numOfMembers++;
     }
 
@@ -41,11 +46,15 @@ public class Member {
     public void setMembersduration(int membersduration) {
         this.membersduration = membersduration;
     }
-
+/**
+   static variable should access by static method
+    */
     public int getNumOfMembers() {
         return numOfMembers;
     }
-
+/**
+   static variable should access by static method
+    */
     public void setNumOfMembers(int numOfMembers) {
         this.numOfMembers = numOfMembers;
     }
@@ -69,7 +78,9 @@ public class Member {
 
 public class driver {
     public static void main(String[] args) {
-
+/**
+   Where is your second member
+    */
         Member m1 = new Member("S001", "Lim Ying Thong", 2);
         System.out.println(m2.toString());
 

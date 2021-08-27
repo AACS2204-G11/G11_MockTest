@@ -1,5 +1,6 @@
 import com.sun.security.jgss.GSSUtil;
 
+/**The class name is member */
 public class q1 {
    private String memberId;
    private String name;
@@ -42,9 +43,16 @@ public class q1 {
        this.membershipDuration = membershipDuration;
    }
 
+/**
+   static variable should access by static method
+    */
    public int getNoOfMembers() {
        return noOfMembers;
    }
+
+   /**
+   static variable should access by static method
+    */
 
    public void setNoOfMembers(int noOfMembers) {
        this.noOfMembers = noOfMembers;
