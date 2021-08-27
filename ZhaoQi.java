@@ -6,7 +6,11 @@ public class member {
     private int membershipDuration;
     private static int noOfMembers;
 
+    /**Your class name is member but your constructor is student.  */
    public student() {
+           /**
+   use Member.numOfMembers for better visibility
+    */
         this.noOfMembers++;
     }
 
@@ -14,6 +18,9 @@ public class member {
         this.memberId = memberId;
         this.name = name;
         this.membershipDuration = membershipDuration;
+            /**
+   use Member.numOfMembers for better visibility. No need to assign noOfMembers to input arg
+    */
         this.noOfMembers = noOfMembers;
         this.noOfMembers++;
     }
